@@ -1,0 +1,36 @@
+/*CSS Stylesheet*/
+body{
+  margin:0;
+  padding:0;
+}
+.grid-container{
+  display:grid;
+  grid-template-rows:repeat(3, 1fr);
+  width:100%;
+  margin:0 auto;
+}
+
+.grid-row{
+  padding:20px;
+}
+.header{
+  grid-template-columns: 1fr 1fr;
+  display:grid;
+  background-color:#ccc;
+}
+
+.main{
+  /*background-color:#7b0000;*/
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(384px, 1fr));
+}
+
+/*@media(min-width:768px){
+  .main{
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  }
+}*/
+
+.footer{
+  background-color:#7b9500;
+}
